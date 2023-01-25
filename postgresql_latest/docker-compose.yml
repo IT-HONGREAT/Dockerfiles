@@ -1,11 +1,28 @@
-version: '2'
+#version: '2'
+#
+#services:
+#  db:
+#    image: postgres:latest
+#    restart: always
+#    environment:
+#      POSTGRES_USER: postgres
+#      POSTGRES_DB: project_name
+#      POSTGRES_PASSWORD: db_password
+#      PGDATA: /var/lib/postgres/data/pgdata
 
+
+
+version: "3"
 services:
-  db:
+  postgresql:
     image: postgres:latest
     restart: always
+    container_name: postgres_compose
+    ports:
+      - "5432:5432"
     environment:
+      POSTGRES_DB: postgresql_db
       POSTGRES_USER: postgres
-      POSTGRES_DB: project_name
-      POSTGRES_PASSWORD: db_password
-      PGDATA: /var/lib/postgres/data/pgdata
+      POSTGRES_PASSWORD: postgres123
+    volumes:
+      - ./data/postgres/:/var/lib/postgres/data/pgdata
