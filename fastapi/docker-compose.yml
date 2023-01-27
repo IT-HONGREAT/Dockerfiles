@@ -1,7 +1,11 @@
 services:
   fastapi:
     build:
-      context: .
-      dockerfile : .
+      context: . # build 실행할 경로
+      dockerfile : . # build 에 대해 정의됨
     ports:
       - 8080:8000
+
+    restart: always
+
+
