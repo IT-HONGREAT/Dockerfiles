@@ -18,3 +18,10 @@
 
 
 **1~8 과정을 반복 하면서 layer를 쌓는다.**
+
+---
+- todo
+  - [ ] docker CI/CD
+### docker CI/CD
+
+- [ ] https://subicura.com/2016/06/07/zero-downtime-docker-deployment.html
