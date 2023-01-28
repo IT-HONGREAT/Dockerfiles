@@ -1,0 +1,25 @@
+services:
+  fastapi_nametest:
+    image: fastapi:0.1
+    build:
+      context: . # build 실행할 경로
+      dockerfile : . # build 에 대해 정의됨
+    ports:
+      - 8080:8000
+
+  fastapi_nametest_1:
+    image: fastapi:0.1
+    #    build:
+    #      context: . # build 실행할 경로
+    #      dockerfile : . # build 에 대해 정의됨
+    ports:
+      - 8082:8000
+
+  fastapi_nametest_222:
+    image: fastapi:0.1
+    #    build:
+    #      context: . # build 실행할 경로
+    #      dockerfile : . # build 에 대해 정의됨
+    ports:
+      - 8083:8000
+

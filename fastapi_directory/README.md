@@ -25,3 +25,7 @@
 ### docker CI/CD
 
 - [ ] https://subicura.com/2016/06/07/zero-downtime-docker-deployment.html
+
+
+---
+컨테이너이름 = 0depth dir 이름 + container(예상)이름
